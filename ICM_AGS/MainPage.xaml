@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ICM_AGS.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="bascula.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Calculadora IMC"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                x:Name="lbICM"
+                Text="Veamos tu condición"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Label
+                Text="Peso"
+                HorizontalOptions="Start"
+                />
+
+            <Entry
+                x:Name="inputPeso"
+                HorizontalTextAlignment="Center"
+                />
+            
+            <Label
+                Text="Altura"
+                HorizontalOptions="Start"
+                />
+
+            <Entry
+                x:Name="inputAltura"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Calcular IMC" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
