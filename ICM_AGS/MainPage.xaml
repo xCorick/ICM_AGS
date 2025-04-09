@@ -5,7 +5,7 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
+            Padding="29,0"
             Spacing="25">
             <Image
                 Source="bascula.png"
